@@ -7,9 +7,9 @@
 
 ## Built with
 
-- [Flask] (https://flask.palletsprojects.com/en/3.0.x/)
-- [MySQL] (https://www.mysql.com/)
-- [Python] (https://www.python.org/)
+- Flask (https://flask.palletsprojects.com/en/3.0.x/)
+- MySQL (https://www.mysql.com/)
+- Python (https://www.python.org/)
 - Html, Css, JavaScript
 
 

@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Problems related to: <i>{{ category }}</i></h1>
+    {% for problem in problems %}
+    <hr>
+    <div>
+        <div>
+            <mark>
+                {{ contest}} {{ problem.year }}: Problem {{ problem.number }}
+            </mark>
+            &nbsp;&nbsp;
+            <button type="button" class="btn btn-primary" onclick="show_hide_ans(this, '{{ problem.answer }}')">Show Answer</button>
+        </div>
+        <br>
+        <div>
+            {{ problem.content |safe }}
+        </div>
+    </div>
+    {% endfor %}
+
+{% endblock %}

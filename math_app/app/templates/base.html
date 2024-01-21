@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {% if title %}
+        <title>{{ title }}</title>
+        {% else %}
+        <title>Math Practice ^_^</title>
+        {% endif %}
+    </head>
+    <script>
+        function show_hide_ans(elem, answer) {
+            if (elem.innerHTML == "Show Answer") {
+                console.log('test');
+                elem.innerHTML = answer + " (click to hide)";
+            }
+            else {
+                elem.innerHTML = "Show Answer";
+            }
+        }
+    </script>
+    <body>
+        <div class="nav-bar">
+            <a href="{{ url_for('index') }}">Home</a>
+            &nbsp;
+            <a href="{{ url_for('categories') }}">Category List</a>
+            &nbsp;
+            <a>(someday i'll add to this?)</a>
+        </div>
+        <hr>
+        {% block content %}{% endblock %}
+    </body>
+</html>

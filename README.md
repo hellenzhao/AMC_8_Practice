@@ -41,7 +41,7 @@ Now to run math_app, first install dependencies in a virtual environment (below 
 cd math_app
 python3 -m venv venv
 source venv/bin/activate
-pip install flask python-dotenv flask-sqlalchemy
+pip install flask python-dotenv flask-sqlalchemy pymysql
 ```
 
 Start a local web server by running:

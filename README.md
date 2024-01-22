@@ -31,7 +31,9 @@ Insert database login credentials:
 * math_app: config.py
 
 
-Web scrape the amc8 problems by running get_amc8.py (this will take a while). Now run make_contests_db.ipynb to create the database and insert the problems.
+Web scraping / database setup:
+* Web scrape the amc8 problems by running get_amc8.py - this will take a while, and is optional since I've included Scraped_AMC_8.csv already
+* Run make_contests_db.ipynb to create the database and insert the problems.
 
 
 Now to run math_app, first install dependencies in a virtual environment (below commands work for Mac):

@@ -18,7 +18,7 @@
 First git clone the repo to get a local copy of the code.
 ```
 git clone https://github.com/hellenzhao/AMC_8_Practice.git
-cd Math_Practice
+cd AMC_8_Practice
 ```
 
 Install dependencies:

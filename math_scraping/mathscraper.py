@@ -119,7 +119,7 @@ retrieve all problems and write to csv file
 def get_all_problems(url, contest_name):
     (contest_links, years) = get_contests(url)
 
-    file_name = f"Scraped_{contest_name}.csv"
+    file_name = f"./Scraped_{contest_name}.csv"
 
     with open(file_name, 'w') as csvfile:
         writer = csv.writer(csvfile, delimiter=';')
@@ -142,7 +142,7 @@ Smaller version of above method for testing purposes
 def get_all_problems_testing(url, contest_name, limit=1):
     (contest_links, years) = get_contests(url)
 
-    file_name = f"Scraped_{contest_name}_test.csv"
+    file_name = f"./Scraped_{contest_name}_test.csv"
 
     with open(file_name, 'w') as csvfile:
         writer = csv.writer(csvfile, delimiter=';')
